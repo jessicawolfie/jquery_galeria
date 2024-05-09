@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(156, 111, 199);
+    padding: 16px 0;
+    color: rgb(232, 232, 232);
+    display: flex;
+    border-bottom: 16px solid rgb(185, 143, 225);
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: rgb(233, 233, 233);
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: green;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: azure;
+    cursor: pointer;
+}
+
+#botao-cancelar {
+    background-color: red;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap; /* p quando chegar ao limite e ocupar toda a tela, criar uma nova linha */
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden; /* p cortar imagem direto no css */
+}
+
+ul li img {
+    width: 100%;
+}
+
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.447);
+    position: absolute; /* fica no canto inferior do li */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-imagem-link a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+}
