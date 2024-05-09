@@ -6,11 +6,11 @@
 }
 
 header {
-    background-color: rgb(156, 111, 199);
+    background-color: rgb(57, 83, 54);
     padding: 16px 0;
-    color: rgb(232, 232, 232);
+    color: white;
     display: flex;
-    border-bottom: 16px solid rgb(185, 143, 225);
+    border-bottom: 16px solid rgb(81, 110, 78);
     justify-content: center;
     text-transform: uppercase;
     font-style: italic;
@@ -36,11 +36,11 @@ input, button {
 }
 
 button {
-    background-color: green;
+    background-color: rgb(87, 66, 52);
     border: none;
     font-weight: bold;
     text-transform: uppercase;
-    color: azure;
+    color: white;
     cursor: pointer;
 }
 
